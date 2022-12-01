@@ -65,7 +65,6 @@ void loop() {
         if (pir_state == HIGH) pir_state = LOW;
     }
 
-
     if ( millis() - 100 > time) {
 
         Serial.print(F("[ ")); Serial.print(millis());Serial.print(F(" ms ] ")); 
@@ -88,6 +87,10 @@ void loop() {
         Serial.print(F("[ ")); Serial.print(millis());Serial.print(F(" ms ] "));
         Serial.print("humid    @ "); Serial.print(dht.readHumidity()); Serial.println(" percent");
 
+        Serial.print(F("[ ")); Serial.print(millis());Serial.print(F(" ms ] "));
+        Serial.print("heat     @ "); Serial.print(dht.computeHeatIndex(dht.readTemperature(),dht.readHumidity())); Serial.println(" celsius");
+
+        
         sensors_event_t event;
 
         tsl.getEvent(&event);
