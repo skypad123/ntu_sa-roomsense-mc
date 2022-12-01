@@ -1,0 +1,14 @@
+//
+// Created by Sky Livingston on 1/12/22.
+//
+
+#ifndef ROOMSENSE_MIRCOCONTROLLER_PREV_H
+#define ROOMSENSE_MIRCOCONTROLLER_PREV_H
+
+
+class prev {
+
+};
+
+
+#endif //ROOMSENSE_MIRCOCONTROLLER_PREV_H

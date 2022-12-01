@@ -1,0 +1,14 @@
+//
+// Created by Sky Livingston on 1/12/22.
+//
+
+#ifndef ROOMSENSE_MIRCOCONTROLLER_DHT11_H
+#define ROOMSENSE_MIRCOCONTROLLER_DHT11_H
+
+
+class DHT11 {
+
+};
+
+
+#endif //ROOMSENSE_MIRCOCONTROLLER_DHT11_H

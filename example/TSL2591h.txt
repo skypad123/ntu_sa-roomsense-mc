@@ -1,0 +1,14 @@
+//
+// Created by Sky Livingston on 1/12/22.
+//
+
+#ifndef ROOMSENSE_MIRCOCONTROLLER_TSL2591_H
+#define ROOMSENSE_MIRCOCONTROLLER_TSL2591_H
+
+
+class TSL2591 {
+
+};
+
+
+#endif //ROOMSENSE_MIRCOCONTROLLER_TSL2591_H

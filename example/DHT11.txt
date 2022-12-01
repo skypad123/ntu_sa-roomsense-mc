@@ -1,0 +1,69 @@
+//
+// Created by Sky Livingston on 1/12/22.
+//
+
+#include "DHT11.h"
+
+#include "DHT.h"
+#include "DHT_U.h"      //these two commands use 'Sketch' to automatically write the code here
+
+
+DHT dht(A0, DHT11);       //initialise the pin, as well as type of dht sensor
+
+
+void setup() {
+    Serial.begin(9600);
+    Serial.println(F("DHT11 Testing"));
+    dht.begin();
+}
+
+
+void loop() {
+    delay(2000);    //wait for a few seconds between measurements.
+    /*DHT11 fastest is 2 seconds*/
+    float Humid = dht.readHumidity();
+    float Temp = dht.readTemperature();
+    //float FarenH = dht.readTemperature(true);     //pass the parameter true if temp in F, not C
+    /*function is actually readTemperature(isFahrenheit)*/
+
+/*isnan() function checks if the value is Not-A-Number(NAN). Returns 1 if not a number. */
+    if (isnan(Humid) || isnan(Temp) || isnan(FarenH)){
+        Serial.println(F("Failed to read from DHT sensor. Input value is not a number"));
+        return;   /*'return' in C++ is like a 'continue' in Python -- such that the below code won't be executed,
+                instead it went back to the top*/
+    }
+
+/*heat index is like a perceived temperature rather than the actual temperature.
+ cause water absorbs heat also, so in the case where air has moisture/water inside,
+ you would feel as if it's hotter than it normally is.*/
+    float HeatIndex_FarenH = dht.computeHeatIndex(FarenH, Humid);
+    float HeatIndex_Celsius = dht.computeHeatIndex(Temp, Humid, false);     /*isFarenHeit = False*/
+
+    /*
+    Serial.print(F("Humidity: "));
+    Serial.print(Humid);
+    Serial.print("\n");
+    Serial.print(F("Temperature in degrees: "));
+    Serial.print(Temp);
+    Serial.print("\n");
+    Serial.print(F("Heat index in degrees: "));
+    Serial.print(HeatIndex_Celsius);
+    Serial.print("\n");
+    Serial.print(F("Temperature in FahrenHeit: "));
+    Serial.print(FarenH);
+    Serial.print("\n");
+    Serial.print(F("Heat index in FahrenHeit: "));
+    //Serial.print(HeatIndex_FarenH);
+    Serial.print("\n");
+    Serial.print("\n");
+    */
+
+    //so much easier using str library
+    printf_str("Humidity: %f\n", Humid);
+    printf_str("Temperature in C: %f\n", Temp);
+    printf_str("Heat index in C: %f\n", HeatIndex_Celsius);
+    printf_str("Temperature in F: %f\n", FarenH);
+    printf_str("Heat index in F: %f\n", HeatIndex_FarenH);
+    Serial.println();             //distinguish from the second reading
+    Serial.println();
+}
