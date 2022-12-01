@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="roomsense-mircocontroller"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/skylivingston/Git Projects/roomsense-mircocontroller/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Production">
+				<Option working_dir="/Users/skylivingston/Git Projects/roomsense-mircocontroller/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 Production"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Debug">
+				<Option working_dir="/Users/skylivingston/Git Projects/roomsense-mircocontroller/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 Debug"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET">
+				<Option output="/Users/skylivingston/Git Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skylivingston/Git Projects/roomsense-mircocontroller/cmake-build-megaatmega2560"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPLATFORMIO=60105"/>
+					<Add option="-DARDUINO_AVR_MEGA2560"/>
+					<Add option="-DF_CPU=16000000L"/>
+					<Add option="-DARDUINO_ARCH_AVR"/>
+					<Add option="-DARDUINO=10808"/>
+					<Add option="-D__AVR_ATmega2560__"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/include"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/src"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/include"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/src"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/libraries/Wire/src"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/cores/arduino"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/variants/mega"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit Unified Sensor"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/libraries/HID/src"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/libraries/SPI/src"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/toolchain-atmelavr/avr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 Z_DUMMY_TARGET"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Z_DUMMY_TARGET/fast">
+				<Option output="/Users/skylivingston/Git Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Z_DUMMY_TARGET" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/skylivingston/Git Projects/roomsense-mircocontroller/cmake-build-megaatmega2560"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DPLATFORMIO=60105"/>
+					<Add option="-DARDUINO_AVR_MEGA2560"/>
+					<Add option="-DF_CPU=16000000L"/>
+					<Add option="-DARDUINO_ARCH_AVR"/>
+					<Add option="-DARDUINO=10808"/>
+					<Add option="-D__AVR_ATmega2560__"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/include"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/src"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/include"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/src"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/libraries/Wire/src"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/cores/arduino"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/variants/mega"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO"/>
+					<Add directory="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit Unified Sensor"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/libraries/HID/src"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/framework-arduino-avr/libraries/SPI/src"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include-fixed"/>
+					<Add directory="/Users/skylivingston/.platformio/packages/toolchain-atmelavr/avr/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 Z_DUMMY_TARGET/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/skylivingston/Git Projects/roomsense-mircocontroller/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/skylivingston/Git Projects/roomsense-mircocontroller/cmake-build-megaatmega2560"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/skylivingston/Git\ Projects/roomsense-mircocontroller/cmake-build-megaatmega2560/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/.github/ISSUE_TEMPLATE.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/.github/PULL_REQUEST_TEMPLATE.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/.github/workflows/githubci.yml">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/.piopm">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_BusIO_Register.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_BusIO_Register.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_I2CDevice.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_I2CDevice.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_I2CRegister.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_SPIDevice.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/Adafruit_SPIDevice.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/CMakeLists.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/README.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/component.mk">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/examples/i2c_address_detect/i2c_address_detect.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/examples/i2c_readwrite/i2c_readwrite.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/examples/i2c_registers/i2c_registers.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/examples/i2corspi_register/i2corspi_register.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/examples/spi_modetest/spi_modetest.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/examples/spi_readwrite/spi_readwrite.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/examples/spi_register_bits/spi_register_bits.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/examples/spi_registers/spi_registers.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit BusIO/library.properties">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library/.github/ISSUE_TEMPLATE.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library/.github/PULL_REQUEST_TEMPLATE.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library/.github/workflows/githubci.yml">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library/.piopm">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library/Adafruit_TSL2591.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library/Adafruit_TSL2591.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library/README.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library/examples/tsl2591/tsl2591.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library/examples/tsl2591_interrupt/tsl2591_interrupt.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library/keywords.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit TSL2591 Library/library.properties">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit Unified Sensor/.gitignore">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit Unified Sensor/.piopm">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit Unified Sensor/Adafruit_Sensor.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit Unified Sensor/Adafruit_Sensor.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit Unified Sensor/LICENSE.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit Unified Sensor/README.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit Unified Sensor/examples/sensortest/sensortest.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/Adafruit Unified Sensor/library.properties">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/.github/ISSUE_TEMPLATE.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/.github/PULL_REQUEST_TEMPLATE.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/.github/workflows/githubci.yml">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/.gitignore">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/.piopm">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/CONTRIBUTING.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/DHT.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/DHT.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/DHT_U.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/DHT_U.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/README.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/code-of-conduct.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/examples/DHT_Unified_Sensor/DHT_Unified_Sensor.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/examples/DHTtester/DHTtester.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/keywords.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/library.properties">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/DHT sensor library/license.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/.github/workflows/platformio.yml">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/.gitignore">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/.piopm">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/README.md">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/examples/calibration/automatic/automatic.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/examples/calibration/manual/manual.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/examples/co2/co2.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/examples/diag/diag.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/examples/info/info.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/keywords.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/library.json">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/library.properties">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/platformio.ini">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/src/modbus_crc.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/src/modbus_crc.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/src/s8_uart.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/src/s8_uart.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/src/utils.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/S8_UART/src/utils.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/SoftwareSerial/.piopm">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/SoftwareSerial/SoftwareSerial.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/SoftwareSerial/SoftwareSerial.h">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/SoftwareSerial/examples/SoftwareSerialExample/SoftwareSerialExample.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/SoftwareSerial/examples/TwoPortReceive/TwoPortReceive.ino">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/SoftwareSerial/keywords.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/SoftwareSerial/library.json">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/SoftwareSerial/library.properties">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/SoftwareSerial/libray.json">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/.pio/libdeps/megaatmega2560/integrity.dat">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/example/DHT11.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/example/DHT11h.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/example/TSL2591.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/example/TSL2591h.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/example/prev.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/example/prevh.txt">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/src/main.cpp">
+			<Option target="Z_DUMMY_TARGET"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/skylivingston/Git Projects/roomsense-mircocontroller/CMakeListsPrivate.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

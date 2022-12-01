@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/Adafruit_BusIO/Adafruit_BusIO_Register.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/Adafruit_BusIO/Adafruit_BusIO_Register.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/Adafruit_BusIO/Adafruit_I2CDevice.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/Adafruit_BusIO/Adafruit_I2CDevice.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/Adafruit_BusIO/Adafruit_SPIDevice.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/Adafruit_BusIO/Adafruit_SPIDevice.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/Adafruit_TSL2591_Library/Adafruit_TSL2591.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/Adafruit_TSL2591_Library/Adafruit_TSL2591.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/Adafruit_Unified_Sensor/Adafruit_Sensor.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/Adafruit_Unified_Sensor/Adafruit_Sensor.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/DHT_sensor_library/DHT.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/DHT_sensor_library/DHT.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/DHT_sensor_library/DHT_U.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/DHT_sensor_library/DHT_U.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/examples/calibration/automatic/automatic.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/examples/calibration/automatic/automatic.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/examples/calibration/manual/manual.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/examples/calibration/manual/manual.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/examples/co2/co2.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/examples/co2/co2.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/examples/diag/diag.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/examples/diag/diag.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/examples/info/info.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/examples/info/info.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/src/modbus_crc.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/src/modbus_crc.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/src/s8_uart.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/src/s8_uart.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/src/utils.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/S8_UART/src/utils.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/SoftwareSerial/SoftwareSerial.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/.pio/libdeps/megaatmega2560/SoftwareSerial/SoftwareSerial.cpp.obj.d"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/src/main.cpp.obj"
+  "CMakeFiles/Z_DUMMY_TARGET.dir/src/main.cpp.obj.d"
+  "Z_DUMMY_TARGET"
+  "Z_DUMMY_TARGET.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/Z_DUMMY_TARGET.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

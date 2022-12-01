@@ -1,0 +1,4 @@
+"/Users/skylivingston/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4345.21/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=megaatmega2560 -G "CodeBlocks - Unix Makefiles" -S "/Users/skylivingston/Git Projects/roomsense-mircocontroller" -B "/Users/skylivingston/Git Projects/roomsense-mircocontroller/cmake-build-megaatmega2560"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/skylivingston/Git Projects/roomsense-mircocontroller/cmake-build-megaatmega2560

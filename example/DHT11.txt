@@ -2,7 +2,7 @@
 // Created by Sky Livingston on 1/12/22.
 //
 
-#include "DHT11.h"
+#include "DHT11h.txt"
 
 #include "DHT.h"
 #include "DHT_U.h"      //these two commands use 'Sketch' to automatically write the code here
