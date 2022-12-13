@@ -1,16 +1,22 @@
 //#include <Arduino.h>
-#include <DHT.h>
-#include <DHT_U.h>
+ #include <DHT.h>
+ #include <DHT_U.h>
 
 #include <Wire.h>
 #include <Adafruit_Sensor.h>
 #include "Adafruit_TSL2591.h"
 
+// #include <s8_uart.h>
+#include <SCD30.h>
+
 #define RED_LED 13
 #define YELLOW_LED 12
 #define GREEN_LED 11
 
-#define MOTION_SENSOR 4
+#define MOTION_SENSOR 10
+
+#define S8_RX 17
+#define S8_TX 16
 
 #define DHT11_PIN A0
 #define DHT11_TYPE DHT11
@@ -19,35 +25,78 @@ DHT dht(DHT11_PIN,DHT11_TYPE);
 
 Adafruit_TSL2591 tsl = Adafruit_TSL2591(2591);
 
+
+// SoftwareSerial S8_serial(S8_RX,S8_TX);
+// S8_UART *sensor_S8;
+// S8_sensor sensor;
+
 int pir_state = LOW;  
 int sensing_state = 0;
 
 unsigned long time;
 
+float result[3] = {0};
+
+
 void configureSensor(void);
 
 void setup() {
-
+    Wire.begin();
     // Configure serial port, we need it for debug
     Serial.begin(9600);
+    //Serial.begin(115200);
 
+
+    // others 
     pinMode(RED_LED,OUTPUT);
     pinMode(YELLOW_LED, OUTPUT);
     pinMode(GREEN_LED, OUTPUT);
 
-    pinMode(MOTION_SENSOR, INPUT);
 
-    dht.begin();
 
+    // temp/humidity sensor
+     dht.begin();
+
+    // light sensor
     if (tsl.begin()) {
         Serial.println(F("Found a TSL2591 sensor"));
     } else {
         Serial.println(F("No sensor found ... check your wiring?"));
         while (1);
     }
-    
-    /* Configure the sensor */
     configureSensor();
+
+    // motion sensor
+    pinMode(MOTION_SENSOR, INPUT);
+
+    scd30.initialize();
+    scd30.setAutoSelfCalibration(1);    
+    // pinMode(S8_RX,INPUT);
+    // pinMode(S8_TX,OUTPUT);
+
+    // co2 sensor
+    // // Initialize S8 sensor
+    // S8_serial.begin(S8_BAUDRATE);
+    // sensor_S8 = new S8_UART(S8_serial);
+
+    // Check if S8 is available
+    // sensor_S8->get_firmware_version(sensor.firm_version);
+    // int len = strlen(sensor.firm_version);
+    // while (len == 0) {
+    //     sensor_S8->get_firmware_version(sensor.firm_version);
+    //     len = strlen(sensor.firm_version); 
+    //     Serial.println("SenseAir S8 CO2 sensor not found!");
+    //     delay(1);
+    // }
+
+    // // Show basic S8 sensor info
+    // Serial.println(">>> SenseAir S8 NDIR CO2 sensor <<<");
+    // printf("Firmware version: %s\n", sensor.firm_version);
+    // sensor.sensor_id = sensor_S8->get_sensor_ID();
+    // Serial.print("Sensor ID: 0x"); printIntToHex(sensor.sensor_id, 4); Serial.println("");
+
+    // Serial.println("Setup done!");
+    // Serial.flush();
 
     time = millis();
 }
@@ -57,11 +106,11 @@ void loop() {
 
     sensing_state = digitalRead(MOTION_SENSOR);
     if (sensing_state == HIGH){
-        digitalWrite(YELLOW_LED, HIGH);
+        digitalWrite(RED_LED, HIGH);
         if (pir_state == LOW) pir_state = HIGH;
     } 
     else {
-        digitalWrite(YELLOW_LED, LOW); // turn LED OFF
+        digitalWrite(RED_LED, LOW); // turn LED OFF
         if (pir_state == HIGH) pir_state = LOW;
     }
 
@@ -76,19 +125,22 @@ void loop() {
             Serial.print("motion   @ "); Serial.println("false");
             //Serial.println("No Motion");	// print on output change
         } 
-
-
         
+        if (scd30.isAvailable()) {
+            scd30.getCarbonDioxideConcentration(result);
 
-        
-        Serial.print(F("[ ")); Serial.print(millis());Serial.print(F(" ms ] ")); 
-        Serial.print("temp     @ "); Serial.print(dht.readTemperature()); Serial.println(" celsius");
-        
-        Serial.print(F("[ ")); Serial.print(millis());Serial.print(F(" ms ] "));
-        Serial.print("humid    @ "); Serial.print(dht.readHumidity()); Serial.println(" percent");
+            Serial.print(F("[ ")); Serial.print(millis());Serial.print(F(" ms ] "));
+            Serial.print("c02      @ "); Serial.print(result[0]); Serial.println(" ppm");
 
-        Serial.print(F("[ ")); Serial.print(millis());Serial.print(F(" ms ] "));
-        Serial.print("heat     @ "); Serial.print(dht.computeHeatIndex(dht.readTemperature(),dht.readHumidity())); Serial.println(" celsius");
+            Serial.print(F("[ ")); Serial.print(millis());Serial.print(F(" ms ] ")); 
+            Serial.print("temp     @ "); Serial.print(result[1]); Serial.println(" celsius");
+            
+            Serial.print(F("[ ")); Serial.print(millis());Serial.print(F(" ms ] "));
+            Serial.print("humid    @ "); Serial.print(result[2]); Serial.println(" percent"); 
+
+            Serial.print(F("[ ")); Serial.print(millis());Serial.print(F(" ms ] "));
+            Serial.print("heat     @ "); Serial.print(dht.computeHeatIndex(result[1],result[2])); Serial.println(" celsius");
+        }
 
         
         sensors_event_t event;
@@ -109,10 +161,8 @@ void loop() {
             Serial.print("light    @ ");Serial.print(event.light); Serial.println(F(" lux"));
         } 
 
-        //dht.humidity().getEvent(&event);
-        Serial.print(F("[ ")); Serial.print(millis());Serial.print(F(" ms ] "));
-        Serial.print("c02      @ "); Serial.print("100.00"); Serial.println(" ppm");
-        
+
+
 
         time = millis();
     }
